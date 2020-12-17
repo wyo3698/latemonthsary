@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>It's super-effective!</title>
+    <meta name="author" content="Tom McErlean">
+    <meta name="description" content="Starter type effectiveness tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="tweenmax.js"></script>
+    <script type="text/javascript" src="createjs.js"></script>
+</head>
+
+<body>
+    <canvas id="projector"></canvas>
+    
+    <audio id="startbuttonsound" src="sounds/start.mp3"></audio>
+    <audio id="winnersound" src="sounds/wow.mp3"></audio>
+    <audio id="losersound" src="sounds/loser.mp3"></audio>
+    <audio id="clicksound" src="sounds/click.mp3"></audio>
+    <audio id="drawsound" src="sounds/draw.mp3"></audio>
+    <audio id="bumpsound" src="sounds/bump.mp3"></audio>
+    <audio src="sounds/battle.mp3" autoplay height="0" width="0" loop id="battlemusic"></audio>
+    <div class="container" id="startcontainer">
+        <div class="box" id="startbutton"></div>
+    </div>
+    <script src="main.js"></script>
+    <script src="animation.js"></script>
+    <div class="container" id="endcontainer">
+        <div class="topcontainer">
+            <h1 id="gameh1"></h1>
+        </div>
+        <div class="gamecontainer">
+            <div class="playercontainer">
+                <h1 class="playerh1">Red</h1>
+                <div class="playerinformation">
+                    <div class="playerlogo">
+                        <img class="logo" src="images/ash.png">
+                    </div>
+                    <div class="playerscore">
+                        <p class="score" id="playerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="rockdiv">
+                        <p class="gameselectiontext" id="rockselection">Grass</p>
+                        <img class="selection" id ="rockimg" src="images/venusaur.png">
+                    </div>
+                    <div class="gameselection" id="paperdiv">
+                        <p class="gameselectiontext" id="paperselection">Fire</p>
+                        <img class="selection" id="paperimg" src="images/charizard.png">
+                    </div>
+                    <div class="gameselection" id="scissorsdiv">
+                        <p class="gameselectiontext" id="scissorsselection">Water</p>
+                        <img class="selection" id="scissorsimg" src="images/blastoise.png">
+                    </div>
+                </div>
+            </div>
+            <div class="playercontainer">
+                <h1 class="playerh1">Blue</h1>
+                <div class="playerinformation">
+                    <div class="playerlogo">
+                        <img class="logo" src="images/gary.png">
+                    </div>
+                    <div class="playerscore">
+                        <p class="score" id="computerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="computerrockdiv">
+                        <p class="gameselectiontext">Grass</p>
+                        <img class="selection" src="images/venusaur.png">
+                    </div>
+                    <div class="gameselection" id="computerpaperdiv">
+                        <p class="gameselectiontext">Fire</p>
+                        <img class="selection" src="images/charizard.png">
+                    </div>
+                    <div class="gameselection" id="computerscissorsdiv">
+                        <p class="gameselectiontext">Water</p>
+                        <img class="selection" src="images/blastoise.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomcontainer" id="bottomcontainer">
+            <div class="winninglogodiv">
+                <img class="winninglogo" id="userwinslogo" src="images/ash.png">
+                <img class="winninglogo" id="robotwinslogo" src="images/gary.png">
+            </div>
+            <p class="gameupdates"></p>
+            <a href="index.html" id="endbutton">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
+
